@@ -71,4 +71,31 @@ public class ExampleTest {
     public void sortedTwoSumTest() {
         Assert.assertEquals(new int[] {1, 2}, example.sortedTwoSum(new int[] {1, 3, 7, 9, 11}, 10));
     }
+
+
+    @Test
+    public void Naive() {
+        Assert.assertEquals(0, example.fibonacciNative(0));
+        Assert.assertEquals(1, example.fibonacciNative(1));
+        Assert.assertEquals(1, example.fibonacciNative(2));
+        Assert.assertEquals(2, example.fibonacciNative(3));
+        Assert.assertEquals(3, example.fibonacciNative(4));
+        Assert.assertEquals(5, example.fibonacciNative(5));
+        Assert.assertEquals(8, example.fibonacciNative(6));
+        Assert.assertEquals(13, example.fibonacciNative(7));
+        Assert.assertEquals(21, example.fibonacciNative(8));
+    }
+
+    @Test
+    public void Memoized() {
+        Assert.assertEquals(0, example.fibonacciMemoized(0));
+        Assert.assertEquals(1, example.fibonacciMemoized(1));
+        Assert.assertEquals(1, example.fibonacciMemoized(2));
+        Assert.assertEquals(2, example.fibonacciMemoized(3));
+        Assert.assertEquals(3, example.fibonacciMemoized(4));
+        Assert.assertEquals(5, example.fibonacciMemoized(5));
+        Assert.assertEquals(8, example.fibonacciMemoized(6));
+        Assert.assertEquals(13, example.fibonacciMemoized(7));
+        Assert.assertEquals(21, example.fibonacciMemoized(8));
+    }
 }
